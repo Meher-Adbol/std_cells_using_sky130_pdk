@@ -1,0 +1,121 @@
+magic
+tech sky130A
+timestamp 1725380530
+<< nwell >>
+rect -81 98 66 260
+<< nmos >>
+rect 3 22 18 64
+<< pmos >>
+rect 3 116 18 242
+<< ndiff >>
+rect -27 53 3 64
+rect -27 35 -21 53
+rect -3 35 3 53
+rect -27 22 3 35
+rect 18 53 48 64
+rect 18 35 24 53
+rect 42 35 48 53
+rect 18 22 48 35
+<< pdiff >>
+rect -27 224 3 242
+rect -27 135 -22 224
+rect -5 135 3 224
+rect -27 116 3 135
+rect 18 224 48 242
+rect 18 135 25 224
+rect 42 135 48 224
+rect 18 116 48 135
+<< ndiffc >>
+rect -21 35 -3 53
+rect 24 35 42 53
+<< pdiffc >>
+rect -22 135 -5 224
+rect 25 135 42 224
+<< psubdiff >>
+rect -68 53 -27 64
+rect -68 35 -56 53
+rect -38 35 -27 53
+rect -68 22 -27 35
+<< nsubdiff >>
+rect -63 224 -27 242
+rect -63 135 -56 224
+rect -39 135 -27 224
+rect -63 116 -27 135
+<< psubdiffcont >>
+rect -56 35 -38 53
+<< nsubdiffcont >>
+rect -56 135 -39 224
+<< poly >>
+rect 3 242 18 261
+rect -121 99 -87 106
+rect -121 81 -113 99
+rect -95 96 -87 99
+rect 3 96 18 116
+rect -95 81 18 96
+rect -121 76 -87 81
+rect 3 64 18 81
+rect 3 8 18 22
+<< polycont >>
+rect -113 81 -95 99
+<< locali >>
+rect -75 277 66 280
+rect -75 260 -57 277
+rect -40 260 -21 277
+rect -4 260 66 277
+rect -75 259 66 260
+rect -56 235 -39 259
+rect -61 224 0 235
+rect -61 135 -56 224
+rect -39 135 -22 224
+rect -5 135 0 224
+rect -61 124 0 135
+rect 21 224 45 235
+rect 21 135 25 224
+rect 42 135 45 224
+rect -121 99 -87 106
+rect -121 81 -113 99
+rect -95 81 -87 99
+rect -121 76 -87 81
+rect 21 96 45 135
+rect 21 79 66 96
+rect 21 62 45 79
+rect -65 53 2 62
+rect -65 35 -56 53
+rect -38 35 -21 53
+rect -3 35 2 53
+rect -65 25 2 35
+rect 19 53 47 62
+rect 19 35 24 53
+rect 42 35 47 53
+rect 19 25 47 35
+rect -56 8 -38 25
+rect -68 -9 -56 8
+rect -39 -9 -20 8
+rect -3 -9 48 8
+rect -68 -12 48 -9
+<< viali >>
+rect -57 260 -40 277
+rect -21 260 -4 277
+rect -56 -9 -39 8
+rect -20 -9 -3 8
+<< metal1 >>
+rect -75 277 66 280
+rect -75 260 -57 277
+rect -40 260 -21 277
+rect -4 260 66 277
+rect -75 257 66 260
+rect -68 8 48 13
+rect -68 -9 -56 8
+rect -39 -9 -20 8
+rect -3 -9 48 8
+rect -68 -17 48 -9
+<< labels >>
+flabel locali -121 90 -121 90 3 FreeSans 80 0 0 0 a
+port 3 e
+flabel locali 66 87 66 87 7 FreeSans 80 0 0 0 z
+port 4 w
+flabel metal1 -75 270 -75 270 1 FreeSans 80 0 0 0 vdd
+port 1 n
+flabel metal1 -68 -5 -68 -5 1 FreeSans 80 0 0 0 vss
+port 2 n
+<< end >>
