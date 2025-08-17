@@ -1,6 +1,6 @@
-# Standard Cell Library – EE671 Course Project
+# Standard Cell Library
 
-This branch (`std_cells`) contains the work completed for the EE671 VLSI Design course project at IIT Bombay. The goal of the project is to design and characterise a small standard‑cell library using the Sky130A PDK. Each cell is designed at strength‑1 with matched rise/fall characteristics and characterised for timing and power.
+The goal of the project is to design and characterise a small standard‑cell library using the Sky130A PDK. Each cell is designed at strength‑1 with matched rise/fall characteristics and characterised for timing and power.
 
 ## Cells implemented
 
