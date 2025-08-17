@@ -4,13 +4,13 @@ The goal of the project is to design and characterise a small standard‑cell li
 
 ## Cells implemented
 
-Team‑19 was assigned three standard cells:
-
 * **Inverter (X1)** – A basic CMOS inverter sized to achieve equal rise and fall transition times (\(W_n = W_{min},\;W_p = 3\times W_n\)).  
 * **3‑input NAND gate** – A combinational logic gate where the drive strength and transistor widths were chosen to match the unit inverter’s delay.  
 * **D flip‑flop** – A sequential edge‑triggered latch built using transmission gates and inverters.
+* **2-input AND gate (first input inverted)** – Implemented using a combination of NAND/NOR style transistor arrangements with one input inverted to balance delay. Characterized with full timing, power, and capacitance tables.  
+* **Buffer** – Realized as two cascaded inverters to restore logic levels and improve drive strength, ensuring sharper transitions and reduced propagation delay for fan-out.  
 
-For each cell we produced:
+For each cell produced:
 
 * **Circuit schematic** with device dimensions.
 * **Magic layout** satisfying all Sky130A design rules, with the cell area reported.
@@ -21,29 +21,36 @@ For each cell we produced:
 
 ## Directory structure
 
-The project files follow the structure specified in the course problem statement【906424783122199†screenshot】:
-
 ```
-Team_Number-19/
 ├── Spice_Netlist/
 │   ├── inv.sp
 │   ├── nand3.sp
+│   ├── and2b.spice
+│   ├── buf.sp
 │   └── dff.sp
 ├── LEF/
 │   ├── inv.lef
 │   ├── nand3.lef
+│   ├── and2b.lef
+│   ├── buf.lef
 │   └── dff.lef
 ├── Verilog/
 │   ├── inv.v
 │   ├── nand3.v
+│   ├── and2b.v
+│   ├── buf.v
 │   └── dff.v
 ├── Layout/
 │   ├── inv.mag
 │   ├── nand3.mag
+│   ├── and2b.mag
+│   ├── buf.mag
 │   └── dff.mag
 ├── LIB/
 │   ├── inv.doc
 │   ├── nand3.doc
+│   ├── and2b.doc
+│   ├── buf.doc
 │   └── dff.doc
 └── Report/
     └── report.pdf
@@ -52,9 +59,6 @@ Team_Number-19/
 The `Spice_Netlist` folder contains the schematic netlists and post‑layout parasitic netlists. The `Layout` directory contains the Magic `.mag` files, while `LEF` and `LIB` contain the extracted LEF and characterised LIB files. Verilog functional descriptions are located in `Verilog`. The report summarising our methodology and results is in the `Report` folder.
 
 ## Methodology
-
-We followed the prescribed sequence from the project definition【951191415932870†screenshot】:
-
 1. **Design** the circuit in NGSpice to match the unit inverter rise/fall delay.  
 2. **Draw the layout** in Magic and verify zero DRC errors and LVS pass.  
 3. **Extract LEF** from the layout using `lef write` and inspect the generated file.  
